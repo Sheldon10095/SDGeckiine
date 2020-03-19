@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="true"?>
+<app version="1.0">
+    <name>SDGeckiine</name>
+    <coder>Sheldon</coder>
+	<url>https://github.com/Sheldon10095/SDGeckiine</url>
+    <version>1.0</version>
+    <release_date>202003170000000</release_date>
+    <short_description>TCPGecko and SDCafiine combined</short_description>
+	<long_description>Run MochaCFW SD before using this.
+	This tool installs both TCPGecko and SDCafiine into system memory so that you can use them at the same time.
+		
+		Special thanks to: Maschell, dimok, NWPlayer123, (and more).</long_description>
+	
+	<category>tool</category>
+</app>
