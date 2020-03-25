@@ -2,6 +2,7 @@
 #include "../dynamic_libs/os_functions.h"
 #include "../utils/logger.h"
 #include "exception_handler_gecko.h"
+#include "string.h"
 
 static const char *exception_names[] = {
 		"DSI",
@@ -120,6 +121,7 @@ static unsigned char exceptionCallback(void *c, unsigned char exception_type) {
 					   pAdd[currentStackTraceDepth + 3]);
 	//}
 	log_print(stackTraceBuffer);
+	strcat(stackTraceBuffer, "\n\n - TCPGecko");
 	OSFatal(stackTraceBuffer);
 
 	return 1;
