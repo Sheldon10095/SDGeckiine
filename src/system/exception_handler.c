@@ -2,6 +2,7 @@
 #include "gecko/dynamic_libs/os_functions.h"
 #include "utils/logger.h"
 #include "exception_handler.h"
+#include "string.h"
 
 #define OS_EXCEPTION_MODE_GLOBAL_ALL_CORES      4
 
@@ -148,6 +149,7 @@ static unsigned char exception_cb(void * c, unsigned char exception_type) {
             pos += sprintf(buf + pos, exception_print_formats[17], &(pAdd[i]),pAdd[i], pAdd[i+1], pAdd[i+2], pAdd[i+3]);
 	//}
     log_print(buf);
+    strcat(buf, "\n\n - SDCafiine");
     OSFatal(buf);
     return 1;
 }
